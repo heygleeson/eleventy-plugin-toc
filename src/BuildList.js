@@ -32,13 +32,13 @@ const _buildLink = ({id, text, children}, ul, flat, depth) => {
 
 }
 
-const BuildList = (listItems, ul, flat, depth = 0) => {
+const BuildList = (listItems, ul, flat, wrapperClass, depth = 0) => {
   const listType = ul ? 'ul' : 'ol'
   const list = listItems
     .sort((a, b) => a.order - b.order)
     .map(li => _buildLink(li, ul, flat, depth))
 
-  return list.length > 0 ? `<${listType}>${list.join('')}</${listType}>` : ''
+  return list.length > 0 ? `<${listType} class="${wrapperClass}">${list.join('')}</${listType}>` : ''
 }
 
 module.exports = BuildList

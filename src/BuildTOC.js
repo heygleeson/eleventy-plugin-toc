@@ -33,7 +33,7 @@ const BuildTOC = (text, opts) => {
     ? `<${wrapper} class="${wrapperClass}" ${label}>
         ${BuildList(headings, ul, flat)}
       </${wrapper}>`
-    : BuildList(headings, ul, flat)
+    : BuildList(headings, ul, flat, wrapperClass)
 }
 
 module.exports = BuildTOC
