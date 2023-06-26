@@ -20,7 +20,7 @@ const _buildLink = ({id, text, children}, ul, flat, depth) => {
 
   if (id && text) {
    if (flat) {
-      return `<li><a href="#${id}">${_escText(text)}</a></li>${(
+      return `<li class="depth${depth}"><a href="#${id}">${_escText(text)}</a></li>${(
         nestedList || []
       ).join('')}`
     } else {
