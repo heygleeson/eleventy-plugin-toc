@@ -1,16 +1,15 @@
 {
   "name": "eleventy-plugin-toc",
   "version": "1.1.5",
+  "type": "module",
   "description": "Eleventy filter to generate a Table of Contents in a template",
   "main": ".eleventy.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "lint": "eslint src/**",
-    "lint:fix": "eslint src/** --fix"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jdsteinbach/eleventy-plugin-toc.git"
+    "url": "git+https://github.com/heygleeson/eleventy-plugin-toc.git"
   },
   "keywords": [
     "11ty",
@@ -19,20 +18,13 @@
     "toc",
     "table of contents"
   ],
-  "author": "James Steinbach",
+  "author": "James Steinbach, Andrew Gleeson",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/jdsteinbach/eleventy-plugin-toc/issues"
+    "url": "https://github.com/heygleeson/eleventy-plugin-toc/issues"
   },
-  "homepage": "https://github.com/jdsteinbach/eleventy-plugin-toc#readme",
+  "homepage": "https://github.com/heygleeson/eleventy-plugin-toc#readme",
   "dependencies": {
-    "cheerio": "^1.0.0-rc.10"
-  },
-  "devDependencies": {
-    "eslint": "^7.32.0",
-    "eslint-config-prettier": "^8.3.0",
-    "eslint-plugin-node": "^1.0.0",
-    "eslint-plugin-prettier": "^4.0.0",
-    "prettier": "^2.4.1"
+    "cheerio": "^1.0.0"
   }
 }
